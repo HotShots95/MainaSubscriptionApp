@@ -68,7 +68,7 @@
             setTimeout(() => {
                 document.getElementById('processing-popup').classList.add('hidden');
                 alert("Your payment has been processed successfully!");
-                window.location.href = "/success"; // Redirect to success page
+                window.location.href = "/listener"; // Redirect to listener page
             }, 3000);
         });
     </script>

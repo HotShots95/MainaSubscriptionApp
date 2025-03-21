@@ -10,5 +10,9 @@ Route::get('/payment', function () {
 })->name('payment');
 
 Route::get('/success', function () {
-    return view('success'); // Create a success page
+    return view('success'); // 
+});
+
+Route::get('/listener', function () {
+    return view('listener'); 
 });
