@@ -149,7 +149,7 @@ body {
 }
 
 .payment_container {
-    max-width: 400px;
+    max-width: 450px;
     margin: 100px auto;
     background: #fff;
     padding: 20px;
@@ -176,22 +176,23 @@ body {
 
 .payment_progress_bar {
     width: 100%;
-    height: 10px;
+    height: 20px;
     background-color: #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
     margin: 20px 0;
+    border: 1px solid #ccc;
 }
 
 .payment_progress_fill {
     width: 0%;
     height: 100%;
-    background-color: #3498db;
-    transition: width 1s linear;
+    background-color: red;
+    transition: width 1s linear, background-color 1s linear;
 }
 
 #payment_countdown {
-    font-size: 30px;
+    font-size: 32px;
     font-weight: bold;
     color: #333;
     margin: 10px 0;

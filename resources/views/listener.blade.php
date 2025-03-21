@@ -33,6 +33,11 @@
             let progress = ((50 - countdown) / 50) * 100;
             progressBar.style.width = progress + "%";
 
+            // Change color dynamically from red to green
+            let red = Math.max(255 - (progress * 2), 0); // Decrease red
+            let green = Math.min(progress * 2, 255); // Increase green
+            progressBar.style.backgroundColor = `rgb(${red}, ${green}, 50)`;
+
             if (countdown <= 0) {
                 clearInterval(countdownInterval);
                 window.location.href = "/success"; // Redirect to success page
